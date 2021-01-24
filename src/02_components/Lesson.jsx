@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 
 function Welcome() {
   return <h1>Hello world!</h1>;
 }
 
-class SuperWelcome extends React.Component {
+class SuperWelcome extends Component {
   render() {
     return <h1>Hello world!</h1>;
   }
