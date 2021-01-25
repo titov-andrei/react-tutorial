@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
-const Counter = () => (
-  <h1>{`Counter component. Counter value is:`}</h1>
-)
+const Counter = (props) => {
+  console.log(props);
+  return <h1>{`Counter component. Counter value is: ${props.counter}`}</h1>
+}
+
 
 class CounterButton extends Component {
   state = {
@@ -21,7 +23,7 @@ class CounterButton extends Component {
     return (
       <div>
         <div>{counter}</div>
-        <Counter />
+        <Counter counter={counter} />
         <button onClick={this.handleClick}>+1</button>
       </div>
     );
