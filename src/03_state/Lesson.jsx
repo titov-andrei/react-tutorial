@@ -5,12 +5,21 @@ class CounterButton extends Component {
     counter: 0,
   };
 
-  handleClick = () => {};
+  handleClick = () => {
+    this.setState({
+      counter: 2,
+    })
+  };
 
   render() {
     const { counter } = this.state;
 
-    return <div>{counter}</div>;
+    return (
+      <div>
+        <div>{counter}</div>
+        <button onClick={this.handleClick}>+1</button>
+      </div>
+    );
   }
 }
 
