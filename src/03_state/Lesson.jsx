@@ -6,9 +6,9 @@ class CounterButton extends Component {
   };
 
   handleClick = () => {
-    this.setState({
-      counter: 2,
-    })
+    this.setState((prevState) => ({
+      counter: ++prevState.counter,
+    }));
   };
 
   render() {
