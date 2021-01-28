@@ -2,9 +2,8 @@ import React, { Component } from "react";
 
 const Counter = (props) => {
   console.log(props);
-  return <h1>{`Counter component. Counter value is: ${props.counter}`}</h1>
-}
-
+  return <h1>{`Counter component. Counter value is: ${props.counter}`}</h1>;
+};
 
 class CounterButton extends Component {
   state = {
