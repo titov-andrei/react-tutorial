@@ -22,7 +22,12 @@ class CounterButton extends Component {
     return (
       <div>
         <div>{counter}</div>
-        <Counter counter={counter} />
+        <Counter
+          counter={counter}
+          func={() => { }}
+          number={1}
+          string="str"
+        />
         <button onClick={this.handleClick}>+1</button>
       </div>
     );
