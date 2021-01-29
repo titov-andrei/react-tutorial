@@ -13,6 +13,12 @@ Counter.propTypes = {
   string: PropTypes.string,
 }
 
+Counter.defaultProps = {
+  func: () => { },
+  number: 0,
+  string: '',
+}
+
 class CounterButton extends Component {
   state = {
     counter: 0,
@@ -31,7 +37,7 @@ class CounterButton extends Component {
       <div>
         <div>{counter}</div>
         <Counter
-          counter={null}
+          counter={counter}
           func={() => { }}
           number={1}
           string="str"
