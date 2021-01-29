@@ -6,8 +6,8 @@ const Counter = ({ counter, func, number, string }) => {
   return <h1>{`Counter component. Counter value is: ${counter}`}</h1>;
 };
 
-Counter.PropTypes = {
-  counter: PropTypes.number,
+Counter.propTypes = {
+  counter: PropTypes.number.isRequired,
   func: PropTypes.func,
   number: PropTypes.number,
   string: PropTypes.string,
@@ -31,7 +31,7 @@ class CounterButton extends Component {
       <div>
         <div>{counter}</div>
         <Counter
-          counter={counter}
+          counter={null}
           func={() => { }}
           number={1}
           string="str"
