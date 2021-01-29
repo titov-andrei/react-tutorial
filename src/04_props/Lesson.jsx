@@ -38,9 +38,6 @@ class CounterButton extends Component {
         <div>{counter}</div>
         <Counter
           counter={counter}
-          func={() => { }}
-          number={1}
-          string="str"
         />
         <button onClick={this.handleClick}>+1</button>
       </div>
