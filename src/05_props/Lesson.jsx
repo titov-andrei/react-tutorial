@@ -29,9 +29,6 @@ export class Lesson extends Component {
     return (
       <div>
         <div>{counter}</div>
-        <Counter
-          counter={counter}
-        />
         <button onClick={this.handleClick}>+1</button>
       </div>
     )
