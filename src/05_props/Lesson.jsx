@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// PropTypes
-
-// Node:
-// Component.propTypes = {
-//   node: PropTypes.node,
-// }
-
 export const Counter = ({ counter = 0 }) => {
   return <h1>{`Counter component. Counter value is: ${counter}`}</h1>
 }
 
 export class Lesson extends Component {
+
+  static propTypes = {
+    children: PropTypes.element,
+  }
+
+  static defaultProps = {
+    children: null,
+  }
+
   state = {
     counter: 0,
   }
