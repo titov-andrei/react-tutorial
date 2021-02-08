@@ -5,7 +5,7 @@ export const Counter = ({ counter = 0 }) => {
   return <h1>{`Counter component. Counter value is: ${counter}`}</h1>
 }
 
-export Button = () => (
+export const Button = () => (
   <button>Simple button</button>
 )
 
