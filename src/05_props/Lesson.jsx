@@ -5,6 +5,10 @@ export const Counter = ({ counter = 0 }) => {
   return <h1>{`Counter component. Counter value is: ${counter}`}</h1>
 }
 
+export Button = () => (
+  <button>Simple button</button>
+)
+
 export class Lesson extends Component {
 
   static propTypes = {
