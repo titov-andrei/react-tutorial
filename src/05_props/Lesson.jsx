@@ -32,7 +32,7 @@ export class Lesson extends Component {
     return (
       <div>
         <div>{counter}</div>
-        {children}
+        {React.cloneElement(children, {counter: this.state.counter})}
         <button onClick={this.handleClick}>+1</button>
       </div>
     )
