@@ -27,10 +27,12 @@ export class Lesson extends Component {
 
   render() {
     const { counter } = this.state;
+    const { children } = this.props;
 
     return (
       <div>
         <div>{counter}</div>
+        {children}
         <button onClick={this.handleClick}>+1</button>
       </div>
     )
