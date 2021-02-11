@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const MyLink = ({ text, onClick }) => (
   <a href="/test" onClick={onClick}>
@@ -10,17 +10,26 @@ const MyLink = ({ text, onClick }) => (
 MyLink.propTypes = {
   text: PropTypes.string,
   onClick: PropTypes.func,
-}
+};
 
 MyLink.defaultProps = {
-  text: 'link',
+  text: "link",
   onClick: () => {},
-}
+};
 
 class App extends Component {
+
+  handleClick = (e) => {
+    e.preventDefault()
+    console.log('Clicked on link!')
+  }
+
   render() {
-    return <div>!!!</div>;
+    return (
+      <MyLink onClick={ this.handleClick } />
+    );
   }
 }
 
 export default App;
+
